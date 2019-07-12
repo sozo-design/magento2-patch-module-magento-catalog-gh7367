@@ -22,7 +22,7 @@
         "sebastian/phpcpd": "2.0.4"
    },
     "config": {
-        "use-include-path": true,
+        "use-include-path": true
     },
     "autoload": {
         "psr-4": {
