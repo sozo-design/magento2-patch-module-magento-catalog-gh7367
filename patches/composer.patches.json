@@ -1,0 +1,7 @@
+{
+  "patches": {
+    "magento/module-catalog": {
+      "Magento Base Final Price Indexer Fix": "../patches/magento/module-catalog/base-final-price-indexer-fix-v1.patch"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+--- magento/vendor/magento/module-catalog/Model/ResourceModel/Product/Indexer/Price/Query/BaseFinalPrice.php
++++ magento/vendor/magento/module-catalog/Model/ResourceModel/Product/Indexer/Price/Query/BaseFinalPrice.php
+@@ -218,7 +218,7 @@
+ 
+         if ($entityIds !== null) {
+             if (count($entityIds) > 1) {
+-                $select->where(sprintf('e.entity_id BETWEEN %s AND %s', min($entityIds), max($entityIds)));
++                $select->where('e.entity_id IN (?)', $entityIds);
+             } else {
+                 $select->where('e.entity_id = ?', $entityIds);
+             }
+--
